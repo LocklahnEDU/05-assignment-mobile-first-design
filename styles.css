@@ -1,0 +1,93 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5em;
+    background-color: whitesmoke;
+}
+
+.header, .footer{
+    background-color: goldenrod;
+    color: wheat;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.footer p{
+    font-size: 0.8rem;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    background-color: khaki;
+    color: steelblue;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.1rem;
+    border: 0.1rem solid goldenrod;
+}
+
+.content{
+    padding: 0.1rem;
+}
+
+.main-content{
+    background-color: white;
+}
+
+.tripleImg{
+    display: none;
+}
+
+.imgtext img{
+ display: none;
+}
+@media(min-width:1024px){
+    .tripleImg{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .tripleImg img{
+        max-width: 340px;
+        max-height: 200px;
+        border: 0.1rem solid goldenrod;
+        border-radius: 10%;
+    }
+    .tripleImg figcaption{
+        text-align: center;
+    }
+    .navbar ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar ul li{
+        width: 100%;
+    }
+    .imgtext{
+        display: flex;
+        flex-direction: row;
+    }
+    .imgtext img{
+        display: flex;
+        min-width: 250px;
+        min-height: 150px;
+        max-width: 500px;
+        max-height: 300px;
+        border: 0.1rem solid goldenrod;
+        border-radius: 10%;
+    }
+}
